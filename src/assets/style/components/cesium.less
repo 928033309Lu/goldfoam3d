@@ -1,0 +1,61 @@
+@text-color: rgba(240, 240, 240, 1);
+@btn-color: rgba(221, 221, 221, 1);
+@header-color: rgba(52, 52, 57, 1);
+
+.compass {
+    right: 10px;
+    top: unset;
+    // bottom: 146px;
+    bottom: 180px;
+}
+
+.navigation-controls {
+    right: 43px;
+    top: unset;
+    bottom: 80px;
+    border: none !important;
+
+    .navigation-control {
+        background: @header-color;
+        opacity: 0.85;
+        color: @btn-color;
+
+        &:hover {
+            background: rgba(28, 28, 31, 1);
+            color: @btn-color;
+        }
+    }
+
+    .navigation-control-icon-zoom-in:hover,
+    .navigation-control-icon-zoom-out:hover {
+        fill: @btn-color;
+    }
+}
+
+.distance-legend {
+    bottom: 3px !important;
+    // left: 305px !important;
+    user-select: none;
+    z-index: unset !important;
+
+    .distance-legend-label {
+        color: @text-color;
+    }
+
+    .distance-legend-scale-bar {
+        border-left: 1px solid @text-color;
+        border-right: 1px solid @text-color;
+        border-bottom: 1px solid @text-color;
+    }
+}
+
+.map-status-bar {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    z-index: 400;
+    font-size: 14px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: rgba(240, 240, 240, 1);
+}

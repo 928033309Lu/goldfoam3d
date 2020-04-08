@@ -1,0 +1,35 @@
+.map3d-panel {
+  >i {
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    cursor: pointer;
+    font-size: 20px;
+    color: @commonColor;
+    transition: color .3s;
+    &:hover{
+      color: @highColor;
+    }
+  }
+
+  .title {
+    font-size: 16px;
+    color: #fff;
+    margin: 25px 0 10px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img{
+      width:16px;
+      margin-right:8px;
+    }
+    span {
+      margin-right: 5px;
+    }
+
+    i {
+      color: @commonColor;
+    }
+  }
+}

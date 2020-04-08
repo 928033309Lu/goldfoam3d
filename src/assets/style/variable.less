@@ -1,0 +1,102 @@
+@sideBlack: #002C46;
+@headerBlack: #030303;
+@conBlack: #152128;
+@highColor: #009FFF;
+@commonColor: #E0E0E0;
+@btnColor: #004B77;
+@listColor: #034972;
+@inputColor: #034972;
+@borColor: #245E80;
+@tborder: #2B678B;
+@headerBgColor: rgba(25, 33, 46, 0.2);
+@headerHeight: 50px;
+@lhiteColor: rgba(255, 255, 255, 0.3);
+@whiteColor: rgba(255, 255, 255, 0.7);
+@hWhiteColor: rgba(255, 255, 255, 0.9);
+@error: #FF2E76;
+@disabledBorder: rgba(43, 103, 139, .4);
+@linearGradient: linear-gradient(90deg, rgba(0, 159, 255, 0.4), rgba(255, 46, 118, 0.4));
+
+@3dTable: #898989;
+@3dTdHover: rgba(41, 55, 81, 1);
+@3dGreen: #1EEAB3;
+
+.bor(@c: @headerBlack; @w: 1px; @s: solid) {
+  border: @c @w @s;
+}
+
+.borsin(left; @c: white; @w: 1px; @s: solid) {
+  border-left: @c @w @s;
+}
+
+.borsin(right; @c: white; @w: 1px; @s: solid) {
+  border-right: @c @w @s;
+}
+
+.borsin(bottom; @c: white; @w: 1px; @s: solid) {
+  border-bottom: @c @w @s;
+}
+
+//div四个角
+
+.common-style-before (@width: 50px, @height: 70px, @background: #012E47) {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -1px;
+  z-index: 9;
+  content: '';
+  margin: auto;
+  height: @height;
+  width: @width;
+  background: @background;
+}
+
+.common-style-after (@width: 70px, @height: 50px, @background: #012E47) {
+  position: absolute;
+  left: -1px;
+  bottom: 0;
+  top: 0;
+  z-index: 9;
+  content: '';
+  margin: auto;
+  height: @height;
+  width: @width;
+  background: @background;
+}
+
+.common-arrow-before(@color: #FF2E76 transparent transparent #FF2E76) {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-width: 3.5px;
+  border-style: solid;
+  border-color: @color;
+}
+
+.common-arrow-after(@color: transparent #FF2E76 #FF2E76 transparent) {
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-width: 3.5px;
+  border-style: solid;
+  border-color: @color;
+}
+
+.flex-style(@type: flex-start) {
+  display: flex;
+  flex-direction: row;
+  justify-content: @type;
+  align-items: center;
+}
+
+.custom-size(@width: 100%, @height: 100%) {
+  width: @width;
+  height: @height;
+}
